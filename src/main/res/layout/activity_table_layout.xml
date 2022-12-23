@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".TableActivity"
+    android:stretchColumns="1">
+
+    <TableLayout
+        android:id="@+id/table_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="4dp">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="123dp"
+                android:layout_height="72dp"
+                android:layout_gravity="center"
+                android:background="@color/blue"
+                android:tag="@color/blue">
+
+            </View>
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="95dp"
+                android:layout_height="96dp"
+                android:layout_alignRight="@id/view"
+                android:background="@color/red"
+                android:tag="@color/red">
+
+            </View>
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="155dp"
+            android:layout_height="233dp"
+            android:padding="6dp">
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="172dp"
+                android:layout_height="61dp"
+                android:background="@color/green"
+                android:tag="@color/green">
+
+            </View>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="156dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="146dp"
+                android:layout_height="169dp"
+                android:layout_toLeftOf="@+id/view4"
+                android:background="@color/purple"
+                android:paddingLeft="2dp"
+                android:tag="@color/purple"></View>
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="76dp"
+                android:layout_height="168dp"
+                android:layout_toLeftOf="@+id/view5"
+                android:background="@color/orange"
+                android:tag="@color/orange"></View>
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="58dp"
+                android:layout_height="168dp"
+                android:background="@color/yellow"
+                android:tag="@color/yellow"></View>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:paddingEnd="6dp">
+
+            <View
+                android:id="@+id/view6"
+                android:layout_width="190dp"
+                android:layout_height="270dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/white"
+                android:tag="@color/white">
+
+            </View>
+
+            <View
+                android:id="@+id/view7"
+                android:layout_width="94dp"
+                android:layout_height="270dp"
+                android:layout_alignRight="@id/view6"
+                android:background="@color/indigo"
+                android:tag="@color/indigo">
+
+            </View>
+        </TableRow>
+
+
+        <SeekBar
+            android:id="@+id/seekBar2"
+            android:layout_width="wrap_content"
+            android:layout_height="39dp"
+            android:background="@color/black"
+            android:paddingEnd="5dp" />
+
+        <Button
+            android:id="@+id/change3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/red"
+            android:text="ChangeLayout"></Button>
+
+
+    </TableLayout>
+
+
+</TableLayout>

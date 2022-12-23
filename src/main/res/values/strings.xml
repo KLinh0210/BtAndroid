@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Modern Art UI</string>
+    <string name="more_information_dialog_layout">More Information</string>
+
+    <string name="dialog_visit">Visit FB</string>
+
+    <string name="dialog_text">Đoàn Ngọc Khánh Linh. MSSV 3119410225. Lớp DCT1193</string>
+    <string name="dialog_exit">Exit</string>
+    <string name="open_with">Open with</string>
+
+
+</resources>
