@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".LinearActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="566dp"
+        android:orientation="horizontal"
+        android:paddingTop="16dp"
+        android:weightSum="3">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="12dp"
+            android:layout_height="645dp"
+            android:layout_toLeftOf="@+id/view1"
+            android:layout_weight="1"
+            android:background="@color/blue"
+            android:tag="@color/blue">
+
+        </View>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="14dp"
+            android:layout_height="645dp"
+            android:layout_toLeftOf="@+id/view2"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:tag="@color/red">
+
+        </View>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="11dp"
+            android:layout_height="586dp"
+            android:layout_toLeftOf="@+id/view3"
+            android:layout_weight="1"
+            android:background="@color/green"
+            android:tag="@color/green">
+
+        </View>
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="25dp"
+            android:layout_height="645dp"
+            android:layout_toLeftOf="@+id/view4"
+            android:layout_weight="1"
+            android:background="@color/purple"
+            android:tag="@color/purple">
+
+        </View>
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="26dp"
+            android:layout_height="645dp"
+            android:layout_toLeftOf="@+id/view5"
+            android:layout_weight="1"
+            android:background="@color/orange"
+            android:tag="@color/orange">
+
+        </View>
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="30dp"
+            android:layout_height="645dp"
+            android:layout_toLeftOf="@+id/view6"
+            android:layout_weight="1"
+            android:background="@color/yellow"
+            android:tag="@color/yellow">
+
+        </View>
+
+        <View
+            android:id="@+id/view6"
+            android:layout_width="40dp"
+            android:layout_height="645dp"
+            android:layout_toLeftOf="@+id/view7"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:tag="@color/white">
+
+        </View>
+
+        <View
+            android:id="@+id/view7"
+            android:layout_width="50dp"
+            android:layout_height="645dp"
+            android:layout_weight="1"
+            android:background="@color/indigo"
+            android:tag="@color/indigo"></View>
+
+
+
+
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="@color/black"
+        android:paddingEnd="5dp" />
+
+
+    <Button
+        android:id="@+id/change1"
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:layout_toBottomOf="@+id/seekBar1"
+        android:backgroundTint="@color/purple_500"
+        android:text="ChangeLayout"
+        android:textColor="@color/white"
+        android:textStyle="bold">
+
+    </Button>
+
+</LinearLayout>
